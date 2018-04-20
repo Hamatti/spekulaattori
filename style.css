@@ -17,7 +17,7 @@ th {
     text-align: left;
 }
 
-.cut {
+.cut > td {
     border-bottom: 1px solid black;
 }
 
