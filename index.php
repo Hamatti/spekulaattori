@@ -23,7 +23,7 @@
         <meta charset='iso-8859-15' />
       	<meta property="og:image" content="http://poytajaakiekko.net/spjkl/gfx/spjkluusi.gif"/>
       	<meta property="og:title" content="SPJKL-EM-spekulaattori" content="http://poytajaakiekko.net/spjkl/gfx/spjkluusi.gif"/>
-      	<meta property="og:description" content="Suomen päytäjääkiekkoliiton maajoukkuepaikkojen spekulointiin tarkoitettu tyäkalu." />
+      	<meta property="og:description" content="Suomen pöytäjääkiekkoliiton maajoukkuepaikkojen spekulointiin tarkoitettu työkalu." />
 
         <title> SPJKL-<?php echo $championship; ?>-spekulaattori</title>
 
