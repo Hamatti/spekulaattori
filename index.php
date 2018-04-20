@@ -1,45 +1,33 @@
+<!DOCTYPE html>
+
 <?php
+  require('helpers.php');
+  require('config.php');
 
-require('helpers.php');
-require('stats_funcs.php');
+  if(array_key_exists('sijoitukset', $_POST)) {
+    $input = read_and_clean_input($_POST['sijoitukset']);
+  } else {
+    $input = array();
+  }
 
-$new = $_POST['sijoitukset'];
-$new = explode("\n", $new);
+  $points = read_csv($input_file);
+  $points = add_and_sort($points, $input);
 
-if($new[0] == null) {
-  $new = array();
-}
-$sanitized = array();
-foreach($new as $name) {
-    $sanitized[] = trim($name);
-}
-
-$points = read_csv('em.csv');
-$new_points = $points;
-$i = 1;
-foreach($sanitized as $name) {
-    $pts = get_point($i++);
-    $new_points[$name][6] = $pts;
-    unset($new_points[$name]['total']);
-    $new_points[$name]['total'] = calculate_points($new_points[$name]);
-}
-uasort($new_points, 'sort_by_total');
-
-
+  $tournament_count = (count($input) > 0) ? '7' : '6';
 ?>
 
-<doctype !html>
+
 
 <html>
     <head>
         <meta charset='iso-8859-15' />
-	<meta property="og:image" content="http://poytajaakiekko.net/spjkl/gfx/spjkluusi.gif"/>
-	<meta property="og:title" content="SPJKL-EM-spekulaattori" content="http://poytajaakiekko.net/spjkl/gfx/spjkluusi.gif"/>
-	<meta property="og:description" content="Suomen päytäjääkiekkoliiton maajoukkuepaikkojen spekulointiin tarkoitettu tyäkalu." />
+      	<meta property="og:image" content="http://poytajaakiekko.net/spjkl/gfx/spjkluusi.gif"/>
+      	<meta property="og:title" content="SPJKL-EM-spekulaattori" content="http://poytajaakiekko.net/spjkl/gfx/spjkluusi.gif"/>
+      	<meta property="og:description" content="Suomen päytäjääkiekkoliiton maajoukkuepaikkojen spekulointiin tarkoitettu tyäkalu." />
+
         <title> SPJKL-EM-spekulaattori</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -56,19 +44,26 @@ uasort($new_points, 'sort_by_total');
     </div>
     <div class="row">
     <div id="preview" class="col-md-6">
-    <h3> Tilanne <?php echo (count($new) > 0 && $new[0]) ? '7' : '6' ?> turnauksen jälkeen </h3>
+    <h3> Tilanne <?php echo $tournament_count ?> turnauksen jälkeen </h3>
     <p><i> Esikatselussa mukana 30 parasta. Lopullisiin lasketaan kuitenkin kaikki pelaajat </i></p>
     <table class="table table-condensed table-hover table-striped">
         <thead>
             <tr>
-                <th> Sij. </th><th>Pelaaja</th><th>Yht.</th><th>Ou</th><th>Ma</th><th>Tu</th><th>SM</th><th>Ot</th><th>Va</th><th>TuOp</th>
+                <th> Sij. </th><th>Pelaaja</th><th>Yht.</th>
+                <?php foreach($tournament_names as $key) {
+                  echo "<th>" . $key . "</th>";
+                }?>
             </tr>
         </thead>
         <tbody>
     <?php
             $i = 1;
-            foreach(array_slice($new_points,0, 31) as $player => $pts) {
-                echo '<tr>';
+            foreach(array_slice($points,0, 31) as $player => $pts) {
+                if($i == $cut_number) {
+                  echo '<tr class="cut">';
+                } else {
+                  echo '<tr>';
+                }
                 echo '<td>'.$i++.'</td><td>'.$player.'</td><td>'.$pts['total'].'</td>';
                 unset($pts['total']);
                 foreach($pts as $tourn) {
@@ -79,16 +74,16 @@ uasort($new_points, 'sort_by_total');
     </table>
     </div>
     <div class="col-md-6" id="input">
-    <h3> Syätä loppusijoituslista </h3>
-    <p> <i>Syätä tähän Turku Openin suomalaisten loppusijoituslista muodossa:</i> <br />
+    <h3> Syötä loppusijoituslista </h3>
+    <p> <i>Syötä tähän viimeisen turnauksen suomalaisten loppusijoituslista muodossa:</i> <br />
 <pre>
     Suojanen Antti
     Lampi Ahti
     Pelkonen Jan
 </pre>
     <i> Tarkista että nimet on kirjoitettu oikein eikä riveillä ole muita merkkejä.</i>
-    <form name="varkaus" action="index.php" method="post">
-        <textarea class="form-control" cols="50" rows="20"  name="sijoitukset"><?php foreach($sanitized as $name) echo $name."\n" ?></textarea><br />
+    <form name="input" action="index.php" method="post">
+        <textarea class="form-control" cols="50" rows="20"  name="sijoitukset"><?php echo implode("\n", $input); ?></textarea><br />
         <input type="submit" class="btn btn-default" />
     </form>
     </div>
@@ -97,7 +92,7 @@ uasort($new_points, 'sort_by_total');
 <div class="row">
 <div class="col-md-12">
 <footer>
-    <a href="http://poytajaakiekko.fi">Suomen päytäjääkiekkoliitto ry</a>
+    <a href="http://poytajaakiekko.fi">Suomen pöytäjääkiekkoliitto ry</a>
 </footer>
 </div>
 </div>

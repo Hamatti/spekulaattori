@@ -17,7 +17,7 @@ th {
     text-align: left;
 }
 
-tr:nth-child(10) td {
+.cut {
     border-bottom: 1px solid black;
 }
 

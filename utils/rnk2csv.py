@@ -35,4 +35,3 @@ for line in ranking:
 	sp[0] = sp[0].strip()
 	sp[1:] = [int(s) for s in sp[1:]]
 	csv_out.writerow(sp)
-
