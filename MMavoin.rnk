@@ -1,0 +1,85 @@
+   #   Pelaaja                      Yht    Ou   Ma   Tu   He   Ot
+---------------------------------------------------------------------------
+   1   Ollila Janne                 325    85   60   54   56   70    0    0
+   2   Eriksson Kevin               325    60   70   60   70   65    0    0
+   3   Iso-Tryykäri Kristian        288    75   65   46   44   58    0    0
+   4   Rautio Juho                  252    58   56   56   38   44    0    0
+   5   Sainio Santtu                241    65    0   70   50   56    0    0
+   6   Sahlgren Jari                221    46   46   50   33   46    0    0
+   7   Pelkonen Jan                 220     0   85   75   60    0    0    0
+   8   Kantola Janne                217     0   75   48   46   48    0    0
+---------------------------------------------------------------------------
+   9   Suominen Benjamin            216    42   50   40   48   36    0    0
+  10   Huhtala Rene                 212    54   58   58   42    0    0    0
+  11   Aulaskari Ismo               187    50   42   34   29   32    0    0
+  12   Eriksson Kimmo               187    48   48   19   30   42    0    0
+  13   Huotelin Vesa                186     0   54   42   40   50    0    0
+  14   Nuttunen Roni                170     0    0   85    0   85    0    0
+  15   Törnsträm Lauri              166    31   40   38   17   40    0    0
+  16   Lampi Ahti                   160     0    0    0   85   75    0    0
+---------------------------------------------------------------------------
+  17   Salo Jali                    148    36   36   30   19   27    0    0
+  18   Pesälä Otto                  142    56    0    0   32   54    0    0
+  19   Koskela Teemu                140     0    0   65   75    0    0    0
+  20   Virri Vesa                   132    29   31   28   16   28    0    0
+  21   Tuominen Niko                116     0   33   29   25   29    0    0
+  22   Henttonen Ville              112    30   28    0   24   30    0    0
+  23   Suojanen Antti               109     0    0   44   65    0    0    0
+  24   Myllykangas Mika              96     0    0    0   36   60    0    0
+---------------------------------------------------------------------------
+  25   Koivula Toni                  95    40    0   33   22    0    0    0
+  26   Tikkanen Jouni                88     0   38   27   23    0    0    0
+  27   Erälaukko Juha                80     0    0    0   54   26    0    0
+  28   Sandberg Henry                76    26    0   23    3   24    0    0
+  29   Käsmä Arto                    70    70    0    0    0    0    0    0
+  30   Vastamäki Jarno               63     0   30   26    7    0    0    0
+  31   Hellsträm Sami                60     0    0    0   26   34    0    0
+  32   Honkanen Pasi                 60     0    0    0   27   33    0    0
+---------------------------------------------------------------------------
+  33   Jukka Konsta                  58     0    0    0   58    0    0    0
+  34   Sevon Petteri                 54     0    0   36   18    0    0    0
+  35   Venäläinen Tomi               49    38    0    0   11    0    0    0
+  36   Asumaa Mika                   49     0   34    0   15    0    0    0
+  37   Santala Juha-Matti            48    34    0    0   14    0    0    0
+  38   Väisänen Olavi                47     0    0   25    0   22    0    0
+  39   Antinkaapo Ari                44    44    0    0    0    0    0    0
+  40   Hietala Antti                 44     0   44    0    0    0    0    0
+---------------------------------------------------------------------------
+  41   Rautiainen Mikko              44     0    0   21    4   19    0    0
+  42   Herlevi Jani                  43     0    0   31   12    0    0    0
+  43   Tonteri Mika                  42    24    0    0    0   18    0    0
+  44   Lahtinen Ismo                 40     0    0    0    9   31    0    0
+  45   Miettinen Petrus              38     0    0    0    0   38    0    0
+  46   Ahlberg Magnus                34     0    0    0   34    0    0    0
+  47   Moisa Teuvo                   33    33    0    0    0    0    0    0
+  48   Ylitalo Kalle                 33    27    0    0    6    0    0    0
+---------------------------------------------------------------------------
+  49   Jousi Netta                   32     0   32    0    0    0    0    0
+  50   Koski Jaakko                  32     0    0   32    0    0    0    0
+  51   Lämsä Tapio                   32    32    0    0    0    0    0    0
+  52   Koskela Oskari                31     0    0    0   31    0    0    0
+  53   Eriksson Aleksi               29     0   29    0    0    0    0    0
+  54   Martiskainen Minerva          28     0    0    0   28    0    0    0
+  55   Säyrinki Toni                 28    28    0    0    0    0    0    0
+  56   Jauhojärvi Ossi               25    25    0    0    0    0    0    0
+---------------------------------------------------------------------------
+  57   Rantanen Janne                25     0    0    0    0   25    0    0
+  58   Carlsson Kaj                  24     0    0   24    0    0    0    0
+  59   Räholm Tiitus                 23     0    0    0    0   23    0    0
+  60   Uusivuo Tero                  22     0    0   22    0    0    0    0
+  61   Räholm Joonatan               22     0    0    0    1   21    0    0
+  62   Vepsäläinen Janne             21     0    0    0   21    0    0    0
+  63   Erälaukko Justus              20     0    0    0   20    0    0    0
+  64   Kemppainen Patrik             20     0    0   20    0    0    0    0
+---------------------------------------------------------------------------
+  65   Räholm Herman                 20     0    0    0    0   20    0    0
+  66   Kattelus Sami                 13     0    0    0   13    0    0    0
+  67   Eronen Lauri                  10     0    0    0   10    0    0    0
+  68   Stenlund Kim                   8     0    0    0    8    0    0    0
+  69   Hägg Tom                       5     0    0    0    5    0    0    0
+  70   Aho Mika                       2     0    0    0    2    0    0    0
+  71   Finell Joni                    0     0    0    0    0    0    0    0
+  72   Hallanaro Marko                0     0    0    0    0    0    0    0
+---------------------------------------------------------------------------
+  73   Kaikkonen Pauli                0     0    0    0    0    0    0    0
+  74   Lehtonen Leevi                 0     0    0    0    0    0    0    0

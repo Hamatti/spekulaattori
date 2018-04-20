@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+}
+
+#upper {
+    width: 100%;
+    margin: auto;
+}
+
+#preview {
+    width: 50%;
+    float: left;
+    padding-right: 60px;
+}
+
+th {
+    text-align: left;
+}
+
+tr:nth-child(10) td {
+    border-bottom: 1px solid black;
+}
+
+#input {
+    padding-top: 2px;
+}
+.clearfix {
+    clear: both;
+}
+
+#results {
+    width: 50%
+}
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
