@@ -25,7 +25,7 @@
       	<meta property="og:title" content="SPJKL-EM-spekulaattori" content="http://poytajaakiekko.net/spjkl/gfx/spjkluusi.gif"/>
       	<meta property="og:description" content="Suomen päytäjääkiekkoliiton maajoukkuepaikkojen spekulointiin tarkoitettu tyäkalu." />
 
-        <title> SPJKL-EM-spekulaattori</title>
+        <title> SPJKL-<?php echo $championship; ?>-spekulaattori</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css" />
@@ -35,7 +35,7 @@
     <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1> SPJKL-EM-spekulaattori </h1>
+            <h1> SPJKL-<?php echo $championship; ?>-spekulaattori </h1>
 
             <p> Tämä spekulaattori on tarkoitettu työkaluksi tilastonnälkäisille pöytäjääkiekkoilijoille. Spekulaattorista läytyy ranking-kauden kuuden ensimmäisen turnauksen tulokset ja voit syöttää loppusijoituslistan haluamassasi järjestyksessä päätöskilpailusta ja näet, miten se vaikuttaa lopullisiin sijoituksiin. Ei enää hankalia Excel-tiedostoja. Tämä työkalu on koodattu aamukahvin parissa, joten siinä saattaa olla pieniä virheitä ja sen design on mitä on. Tilastojen oikeellisuutta ei myöskään taata, joten reissulippuja ei näiden pohjalta kannata tehdä. Palautetta voi antaa <a href="https://www.facebook.com/poytajaakiekko/posts/290169707773379" target=_blank>Facebookissa</a> tai sähköpostilla <code>webmaster at poytajaakiekko fi</code></p>
 
